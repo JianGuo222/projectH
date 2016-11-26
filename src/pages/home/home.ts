@@ -14,6 +14,7 @@ export class HomePage {
   mySlideOptions = {
     // initialSlide: 0,
     // loop: true
+    pager: true
   };
 
   constructor(public navCtrl: NavController) {
