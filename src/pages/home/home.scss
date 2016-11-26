@@ -7,4 +7,44 @@
         text-align: right;
         padding-right: 15px;
     }
+    .swiper-pagination-bullet {
+        background-color: white;
+    }
+}
+
+.cta-home {
+    height: 120px;
+    color: white;
+    padding-top: 50px;
+    padding-left: 35px;
+    position: relative;
+    img{
+        width: 42px;
+        position: absolute;
+        top: 50%;
+        margin-top: -21px;
+        left: 50%;
+        margin-left: -64px;
+    }
+    &.cta-1 {
+        background-color:  #f1736a;
+        border-top: solid 1px white;
+        border-right: solid 1px white;
+    }
+    &.cta-2 {
+        background-color:  #fb965a;
+        border-top: solid 1px white;
+    }
+    &.cta-3 {
+        background-color:  #00bdcc;
+        border-top: solid 1px white;
+        border-right: solid 1px white;
+        border-bottom: solid 1px white;
+    }
+    &.cta-4 {
+        border-top: solid 1px white;
+        background-color:  #25b578;
+        border-bottom: solid 1px white;
+    }
+
 }
