@@ -25,8 +25,8 @@ export class HomePage {
     // if (this.isFirstTimeLoad) {
     //   this.isFirstTimeLoad = false;
     // } else {
-    let currentIndex = this.slider.getActiveIndex();
-    console.log("Current index is ", currentIndex);
+    // let currentIndex = this.slider.getActiveIndex();
+    // console.log("Current index is ", currentIndex);
     // }
   }
 

@@ -48,3 +48,12 @@
     }
 
 }
+
+.menu-button {
+    background-color: white;
+    color: #444;
+
+    &.activated {
+        background-color: white;
+    }
+}

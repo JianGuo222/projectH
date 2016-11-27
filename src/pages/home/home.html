@@ -7,6 +7,9 @@
 
 
 <ion-content>
+  <ion-fab top right>
+    <button ion-fab mini class="menu-button"><ion-icon name="menu"></ion-icon></button>
+  </ion-fab>
   <ion-slides #mySlider [options]="mySlideOptions" (ionDidChange)="onSlideChanged()" class="banner-slider">
     <ion-slide>
       <img src="assets/img/banner1.jpg" alt="" />
