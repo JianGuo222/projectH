@@ -9,7 +9,9 @@ import { ViewChild } from '@angular/core';
 })
 export class HomePage {
   @ViewChild('mySlider') slider: Slides;
+  @ViewChild('buttonTrigger') button;
   // isFirstTimeLoad: boolean;
+  activeClass: string;
 
   mySlideOptions = {
     // initialSlide: 0,
@@ -19,6 +21,13 @@ export class HomePage {
 
   constructor(public navCtrl: NavController) {
     // this.isFirstTimeLoad = true;
+  }
+
+
+  clickHandler(button) {
+    this.activeClass = button;
+    // here starts the animation
+    this.button.nativeElement.click();
   }
 
   onSlideChanged() {
