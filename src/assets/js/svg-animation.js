@@ -44,5 +44,8 @@
       };
 
       [].slice.call( document.querySelectorAll( '.box--collapser' ) ).forEach( function( el ) { new SVGCollapser(el); } );
-      new SVGExpander( document.getElementById( 'expander' ) );
+      new SVGExpander( document.getElementById( 'expander-1' ) );
+      new SVGExpander( document.getElementById( 'expander-2' ) );
+      new SVGExpander( document.getElementById( 'expander-3' ) );
+      new SVGExpander( document.getElementById( 'expander-4' ) );
     })();		

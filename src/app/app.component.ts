@@ -6,7 +6,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 
 
 @Component({
-  template: `<ion-nav [root]="rootPage"></ion-nav>`
+  template: `<ion-nav [root]="rootPage"></ion-nav>`,
 })
 export class MyApp {
   rootPage = TabsPage;
@@ -15,7 +15,8 @@ export class MyApp {
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
-      StatusBar.styleDefault();
+      // StatusBar.styleDefault();
+      StatusBar.hide();
       Splashscreen.hide();
     });
   }

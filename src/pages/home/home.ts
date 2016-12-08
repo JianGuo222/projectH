@@ -9,7 +9,10 @@ import { ViewChild } from '@angular/core';
 })
 export class HomePage {
   @ViewChild('mySlider') slider: Slides;
-  @ViewChild('buttonTrigger') button;
+  @ViewChild('buttonTrigger1') button1;
+  @ViewChild('buttonTrigger2') button2;
+  @ViewChild('buttonTrigger3') button3;
+  @ViewChild('buttonTrigger4') button4;
   // isFirstTimeLoad: boolean;
   activeClass: string;
 
@@ -27,7 +30,18 @@ export class HomePage {
   clickHandler(button) {
     this.activeClass = button;
     // here starts the animation
-    this.button.nativeElement.click();
+    if (button === 'button1') {
+      this.button1.nativeElement.click();
+    }
+    if (button === 'button2') {
+      this.button2.nativeElement.click();
+    }
+    if (button === 'button3') {
+      this.button3.nativeElement.click();
+    }
+    if (button === 'button4') {
+      this.button4.nativeElement.click();
+    }
   }
 
   onSlideChanged() {
